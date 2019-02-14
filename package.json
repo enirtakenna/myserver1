@@ -17,6 +17,7 @@
   },
   "homepage": "",
   "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
     "s-": "0.0.1"
   }
 }
