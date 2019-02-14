@@ -1,7 +1,6 @@
 const http = require('http');
 const express = require('express');
 const port=process.env.PORT || 3000;
-const cool = require('cool-ascii-faces');
 
 const server = http.createServer((req, res) => {
 	res.statusCode = 200;
@@ -14,5 +13,3 @@ server.listen(port,() => {
 });
 
 
-express()
-	.get('/cool', (req, res) => res.send(cool()));
