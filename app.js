@@ -7,15 +7,14 @@ const server = http.createServer((req, res) => {
 	res.setHeader('Content-Type', 'text/html');
 	fs.readFile('/public/index.html', null, function(error, data){
 		if (error){
-			response.writeHead(404);
-			response.write('File not found!');
+			res.writeHead(404);
+			res.write('File not found!');
 		}
 		else {
-			response.write(data);
+			res.write(data);
 		}
-		response.end();
+		res.end();
 	});
-	res.end('<h1>Hello World by enirtakenna</h1><p>Heroku is cool! Frederikke is here too!</p>');
 });
 
 server.listen(port,() => {
